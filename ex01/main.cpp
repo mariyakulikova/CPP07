@@ -6,7 +6,7 @@
 /*   By: mkulikov <mkulikov@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/22 17:37:28 by mkulikov          #+#    #+#             */
-/*   Updated: 2025/05/14 09:42:36 by mkulikov         ###   ########.fr       */
+/*   Updated: 2025/05/19 12:25:57 by mkulikov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int main() {
 	std::string words[] = {"hello", "world", "42"};
 	std::size_t wordsLen = sizeof(words) / sizeof(words[0]);
 
-	std::cout << "Words: ";
+	std::cout << "Print words: ";
 	iter(words, wordsLen, printElement<std::string>);
 	std::cout << std::endl;
 
@@ -39,7 +39,7 @@ int main() {
 	const double digits[] = {1.0, 2.0, 3.0, 4.0, 5.0};
 	std::size_t digitsLen = sizeof(digits) / sizeof(digits[0]);
 
-	std::cout << "Digits: ";
+	std::cout << "Print digits: ";
 	iter(digits, digitsLen, printElement<double>);
 	std::cout << std::endl;
 	return 0;
